@@ -1,8 +1,106 @@
+import { OrbitCounter } from "@/components/mdx/orbit-counter";
+
 export const metadata = {
   title: "Building Orbit, Part 0: Setup",
   date: "2026-10-22",
-  summary: "Getting from an empty folder to a deployed Next.js site.",
-  tags: ["orbit", "nextjs", "setup"],
+  summary:
+    "From an empty folder to a Next.js site on GitHub: the tools, what each one does, and why.",
+  tags: ["orbit", "nextjs", "setup", "tooling"],
 };
 
-Draft: the full write-up is coming in the next commit.
+Orbit is my personal site: a portfolio, a creative playground, and the place where I
+write down how I build things. This is the first of those write-ups. It covers
+**Phase 0**: everything that has to happen before there's anything to look at.
+
+I'm an illustrator studying computer engineering, and I'm new to web development, so
+I'm going to explain each piece in plain language.
+
+## The plan
+
+The long-term idea is a hand-inked 3D galaxy where each planet is a section of the
+site. But a recruiter on a phone should still be able to read about me instantly, so
+the plain 2D version comes first and always has to keep working. Phase 0 just gets the
+foundation in place:
+
+1. A Linux environment to work in
+2. Node.js, the engine that runs all the web tooling
+3. Git and GitHub, for history and backup
+4. An AI pair programmer
+5. The Next.js project itself
+6. A live deployment
+
+## 1. WSL: Linux inside Windows
+
+Most web tooling assumes a Unix-like system. **WSL** (Windows Subsystem for Linux)
+runs a real Linux (Ubuntu) alongside Windows, so I get a Linux terminal without
+dual-booting. My project lives in the Linux file system (`~/projects/...`), not on the
+`C:` drive, because tools run much faster there.
+
+## 2. Node.js with nvm
+
+**Node.js** runs JavaScript outside the browser. Every tool in this project (the dev
+server, the build, the linter) is a Node program. Instead of installing Node directly,
+I used **nvm** (Node Version Manager), which lets me install and switch between Node
+versions with one command:
+
+```bash
+nvm install --lts   # the "long-term support" version: stable, recommended
+node -v             # check it worked
+```
+
+Node comes with **npm**, the package manager that downloads libraries.
+
+## 3. Git and GitHub
+
+**Git** records snapshots of the project ("commits") so I can see what changed and
+undo mistakes. **GitHub** hosts a copy online. I installed `gh`, GitHub's command-line
+tool, and logged in once with `gh auth login`. After that I could create the repository
+from the terminal.
+
+## 4. Claude Code
+
+**Claude Code** is an AI coding assistant that runs in the terminal. It can read the
+project, run commands, and edit files. I use it as a pair programmer *and* a tutor:
+the project has a `CLAUDE.md` file that tells it to explain what it's doing and define
+new terms, and it writes learning notes as it works.
+
+## 5. create-next-app
+
+**Next.js** is a framework built on React for making websites. One command
+generates a working project:
+
+```bash
+npx create-next-app@latest . --ts --tailwind --eslint --app --src-dir --import-alias "@/*" --use-npm
+```
+
+That's TypeScript (JavaScript with types), Tailwind (styling with utility classes),
+ESLint (catches mistakes), the App Router (folders become URLs), a `src/` folder,
+and `@/` as a shortcut for imports.
+
+## 6. CLAUDE.md
+
+`CLAUDE.md` is the project's briefing document: the vision, the stack, the phase plan,
+the rules that can't be broken (the 2D version always works, respect reduced motion,
+stay fast on phones), and coding conventions. Claude Code reads it at the start of
+every session, so I don't have to repeat myself.
+
+## 7. GitHub and Vercel
+
+The code is public on GitHub as `orbit-portfolio`. **Vercel** (the company behind
+Next.js) hosts the site: connect the GitHub repo once in the browser, and every
+`git push` automatically builds and deploys a new version.
+
+## Proof that MDX works
+
+This page is written in **MDX**: Markdown that can contain React components. The
+planet below is a real interactive component living in the middle of the write-up:
+
+<OrbitCounter />
+
+That matters for later: write-ups will be able to embed 3D model viewers, sketches,
+and other toys right next to the text.
+
+## Next up
+
+Phase 1 is the content skeleton: plain pages for home, projects, and about, with no 3D
+yet. Then the fun starts.

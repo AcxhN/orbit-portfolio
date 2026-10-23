@@ -17,6 +17,8 @@ Running record of the unattended build session (2026-10-22).
 - **Convention change (your request).** From here on, commits follow the Angular
   convention `type(scope): summary`, recorded in CLAUDE.md. The 7 earlier commits keep
   their old messages (no history rewrites).
+- **Step 4d — First write-up.** "Building Orbit, Part 0: Setup" with the embedded
+  `OrbitCounter` component (verified rendering on a production server).
 
 ## Failed / blocked
 
