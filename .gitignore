@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large art/3D source files (keep these out of the repo)
+*.blend
+*.blend1
+*.psd
+*.kra
+*.procreate

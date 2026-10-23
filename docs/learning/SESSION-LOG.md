@@ -7,6 +7,8 @@ Running record of the unattended build session (2026-10-22).
 - **Step 1 — Scaffold.** create-next-app (Next.js 16.4.2, React 19.3, Tailwind 4,
   TypeScript, ESLint, App Router, `src/`, `@/*` alias). Package renamed to `orbit`.
   Build and lint pass.
+- **Step 2 — CLAUDE.md.** Project briefing for Claude Code (imports Next's
+  AGENTS.md). Art source formats added to `.gitignore`.
 
 ## Failed / blocked
 
