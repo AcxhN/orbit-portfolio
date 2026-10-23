@@ -23,6 +23,8 @@ Running record of the unattended build session (2026-10-22).
   (placeholders), ready to be reused by the Phase 3 terminal.
 - **Step 4f — Lite mode + reduced motion.** Header toggle (localStorage in try/catch),
   `usePrefersReducedMotion`, combined `useReducedEffects`, CSS safety net.
+- **Step 4g — CLAUDE.md.** Phase 1 marked done; folder structure and decisions recorded.
+  Everything pushed to GitHub. **Stopped here, before Phase 2, as instructed.**
 
 ## Failed / blocked
 
@@ -43,4 +45,16 @@ Running record of the unattended build session (2026-10-22).
 
 ## Open questions for you
 
-_(see below as they come up)_
+1. **Vercel**: connect the repo at https://vercel.com/new (steps in `02-github.md`).
+   That's the last piece of Phase 0.
+2. **Your name and content**: the site says "A" everywhere. Update `profile` in
+   `src/data/about.ts` and the heading in `src/app/page.tsx`. The bio, skills, and timeline
+   are placeholders.
+3. **Social/contact links**: none yet (GitHub, email, art accounts?). Where should they go?
+   Footer, About, or both?
+4. **README.md** is still the create-next-app boilerplate. Want a short Orbit README?
+5. **npm audit**: 5 "high" warnings from the template's dev tooling. Fine to look at
+   together; I avoided `npm audit fix --force` because it can break things.
+6. **Light theme**: the site is dark-only by design for now. Want a light option later?
+7. The Part 0 write-up is written as you (first person). Please read it and rewrite
+   anything that doesn't sound like you.
