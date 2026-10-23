@@ -6,15 +6,20 @@
 
 Orbit is the owner's personal website: part portfolio, part creative playground, part
 documentation hub (write-ups on each project and how it was built), and a permanent
-work in progress. The owner is an illustrator studying computer engineering, so the
-site mixes software and illustration.
+work in progress. The owner is a computer engineering student (not an illustrator
+or artist).
+
+**The owner does not make art assets**: no illustrations, painted textures, or 3D
+models. Never plan work that waits on the owner to draw or model something. Visuals
+must be generated in code (shaders, procedural geometry, SVG, CSS) or come from openly
+licensed sources (with attribution recorded in the repo).
 
 Long-term (not yet): a scroll-navigated 3D galaxy home where each planet is a site
-section; a terminal-style About page (`whoami`, skills, timeline, `neofetch`, easter
-eggs) that later unlocks a walkable WASD 3D room via `cd ~/room`; a hand-inked
-non-photorealistic style (ink outlines, cross-hatching, toon shading, paper grain)
-centred on a star driven by GitHub commit activity; hand-painted planet textures and
-Blender `.glb` models.
+section, with planets built procedurally in code; a terminal-style About page
+(`whoami`, skills, timeline, `neofetch`, easter eggs) that later unlocks a walkable
+WASD 3D room via `cd ~/room`; a shader-based ink-sketch look (ink outlines,
+cross-hatching, toon shading, paper grain) centred on a star driven by GitHub commit
+activity.
 
 ## Stack
 
@@ -31,7 +36,7 @@ Blender `.glb` models.
    (content is still placeholder; owner fills in name, bio, timeline)
 2. Galaxy home
 3. Terminal About Me
-4. Signature hand-inked style + commit-driven star
+4. Signature ink-sketch style (shaders/post-processing) + commit-driven star
 5. Fun layer (music widget, easter eggs, walkable room, comet guestbook, ship's log, Ctrl+K palette, …)
 
 ## Non-negotiables
@@ -40,7 +45,8 @@ Blender `.glb` models.
 - Lite mode toggle; respect `prefers-reduced-motion`; mobile fallback.
 - Keep a performance budget. A recruiter on a phone should be able to read about
   the owner instantly.
-- Large source files (`.blend`, `.psd`, `.kra`, `.procreate`) never go in the repo.
+- Large binary editor files (`.blend`, `.psd`, `.kra`, `.procreate`) never go in the
+  repo (`.gitignore` blocks them as a safety net).
 
 ## Conventions
 

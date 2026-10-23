@@ -16,10 +16,10 @@
 - The line `@AGENTS.md` at the top is an **import**. It pulls in the
   `AGENTS.md` file that Next.js generated, so Claude also sees Next's warning to check
   the bundled docs. One source of truth, no copy-pasting.
-- **.gitignore** lists file patterns git should pretend don't exist. Art source files
-  are huge (hundreds of MB) and binary, so git can't diff them usefully, and GitHub
-  rejects files over 100 MB. Exported assets (`.png`, `.webp`, `.glb`) are fine to
-  commit; the working files stay on your machine or in cloud storage.
+- **.gitignore** lists file patterns git should pretend don't exist. Project files from
+  3D and image editors are huge (hundreds of MB) and binary, so git can't diff them usefully, and GitHub
+  rejects files over 100 MB. You don't plan to make art assets (the site's visuals
+  will be generated in code), so this is just a safety net in case such a file ever lands in the folder.
 
 ## New terms
 

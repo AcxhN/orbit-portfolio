@@ -22,7 +22,7 @@ export default function Home() {
           Hi, I&apos;m A.
         </h1>
         <p className="max-w-prose text-lg leading-relaxed text-muted">
-          I&apos;m an illustrator studying computer engineering. Orbit is my
+          I&apos;m a computer engineering student. Orbit is my
           portfolio, my creative playground, and the place where I document how
           I build things. It&apos;s a permanent work in progress.
         </p>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s · Orbit",
   },
   description:
-    "Portfolio, creative playground, and build notes of an illustrator studying computer engineering.",
+    "Portfolio, creative playground, and build notes of a computer engineering student.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

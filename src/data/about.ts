@@ -25,19 +25,15 @@ export type TimelineEntry = {
 export const profile: Profile = {
   name: "A",
   handle: "a",
-  tagline: "Illustrator studying computer engineering.",
+  tagline: "Computer engineering student who likes building things.",
   location: "Earth",
   bio: [
-    "I draw, and I build things with code. Orbit is where those two halves meet.",
+    "I study computer engineering and build things with code. Orbit is where I put them.",
     "Placeholder bio: a couple of sentences about what you study, what you make, and what you're curious about right now.",
   ],
 };
 
 export const skillGroups: SkillGroup[] = [
-  {
-    category: "Art",
-    skills: ["Illustration", "Inking", "Digital painting", "Blender"],
-  },
   {
     category: "Code",
     skills: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
@@ -45,6 +41,10 @@ export const skillGroups: SkillGroup[] = [
   {
     category: "Engineering",
     skills: ["C", "Embedded systems", "Digital logic"],
+  },
+  {
+    category: "Tools",
+    skills: ["Git", "Linux / WSL", "VS Code"],
   },
 ];
 
@@ -58,10 +58,5 @@ export const timeline: TimelineEntry[] = [
     year: "20XX",
     title: "Started computer engineering",
     description: "Placeholder: your program and school.",
-  },
-  {
-    year: "20XX",
-    title: "Started drawing seriously",
-    description: "Placeholder: when and how illustration became your thing.",
   },
 ];

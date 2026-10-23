@@ -33,5 +33,5 @@ name) and two cards linking to Projects and About.
 ## Try it yourself
 
 1. Replace "A" with your name and rewrite the intro paragraph in your own voice.
-2. Add a third card to the `sections` array (e.g. `{ href: "/projects", title: "Art", ... }`)
+2. Add a third card to the `sections` array (e.g. `{ href: "/projects", title: "Notes", ... }`)
    and watch the grid reflow. On a wide screen it's 2 columns (`sm:grid-cols-2`), on a phone 1.

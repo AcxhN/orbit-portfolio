@@ -40,7 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# large art/3D source files (keep these out of the repo)
+# large binary source files from 3D/image editors (keep these out of the repo)
 *.blend
 *.blend1
 *.psd

@@ -8,7 +8,7 @@ Running record of the unattended build session (2026-10-22).
   TypeScript, ESLint, App Router, `src/`, `@/*` alias). Package renamed to `orbit`.
   Build and lint pass.
 - **Step 2 — CLAUDE.md.** Project briefing for Claude Code (imports Next's
-  AGENTS.md). Art source formats added to `.gitignore`.
+  AGENTS.md). Large binary editor files added to `.gitignore`.
 - **Step 3 — GitHub.** Public repo https://github.com/AcxhN/orbit-portfolio, `main` pushed.
 - **Step 4a — Layout.** Header/nav (active link), footer, skip link, dark theme tokens.
 - **Step 4b — Home page.** Intro with placeholder name "A" and section cards.
@@ -25,6 +25,9 @@ Running record of the unattended build session (2026-10-22).
   `usePrefersReducedMotion`, combined `useReducedEffects`, CSS safety net.
 - **Step 4g — CLAUDE.md.** Phase 1 marked done; folder structure and decisions recorded.
   Everything pushed to GitHub. **Stopped here, before Phase 2, as instructed.**
+- **Correction (your request).** You're not an illustrator: removed that framing from the
+  site, about data, write-up, CLAUDE.md, and notes. CLAUDE.md now says you won't make art
+  assets, so visuals come from code or openly licensed sources. Replaced the boilerplate README.
 
 ## Failed / blocked
 
@@ -50,11 +53,10 @@ Running record of the unattended build session (2026-10-22).
 2. **Your name and content**: the site says "A" everywhere. Update `profile` in
    `src/data/about.ts` and the heading in `src/app/page.tsx`. The bio, skills, and timeline
    are placeholders.
-3. **Social/contact links**: none yet (GitHub, email, art accounts?). Where should they go?
+3. **Social/contact links**: none yet (GitHub, email, LinkedIn?). Where should they go?
    Footer, About, or both?
-4. **README.md** is still the create-next-app boilerplate. Want a short Orbit README?
-5. **npm audit**: 5 "high" warnings from the template's dev tooling. Fine to look at
+4. **npm audit**: 5 "high" warnings from the template's dev tooling. Fine to look at
    together; I avoided `npm audit fix --force` because it can break things.
-6. **Light theme**: the site is dark-only by design for now. Want a light option later?
-7. The Part 0 write-up is written as you (first person). Please read it and rewrite
+5. **Light theme**: the site is dark-only by design for now. Want a light option later?
+6. The Part 0 write-up is written as you (first person). Please read it and rewrite
    anything that doesn't sound like you.
