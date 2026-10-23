@@ -9,10 +9,12 @@ Running record of the unattended build session (2026-10-22).
   Build and lint pass.
 - **Step 2 — CLAUDE.md.** Project briefing for Claude Code (imports Next's
   AGENTS.md). Art source formats added to `.gitignore`.
+- **Step 3 — GitHub.** Public repo https://github.com/AcxhN/orbit-portfolio, `main` pushed.
 
 ## Failed / blocked
 
-_(nothing yet)_
+- **Vercel deploy: waiting on you** (browser login). Not attempted, as you asked.
+  Steps are in `02-github.md`. Until then Phase 0's "live deploy" isn't done.
 
 ## Notes
 
