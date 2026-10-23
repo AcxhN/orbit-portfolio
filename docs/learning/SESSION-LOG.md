@@ -1,0 +1,27 @@
+# Session log
+
+Running record of the unattended build session (2026-10-22).
+
+## Done
+
+- **Step 1 — Scaffold.** create-next-app (Next.js 16.4.2, React 19.3, Tailwind 4,
+  TypeScript, ESLint, App Router, `src/`, `@/*` alias). Package renamed to `orbit`.
+  Build and lint pass.
+
+## Failed / blocked
+
+_(nothing yet)_
+
+## Notes
+
+- Node is installed through nvm (`~/.nvm`, Node v24.22.1). Claude Code's sandbox hides
+  your home folder, so I ran node/npm/git/gh commands outside the sandbox.
+- `npm install` reported "5 high severity vulnerabilities" in dev dependencies straight
+  from the template. I did **not** run `npm audit fix --force`, because it can install
+  breaking major versions. Worth looking at with `npm audit` later.
+- npm warned that `unrs-resolver` has an install script not yet approved
+  (`npm install-scripts approve unrs-resolver`). Build and lint work without it.
+
+## Open questions for you
+
+_(see below as they come up)_
