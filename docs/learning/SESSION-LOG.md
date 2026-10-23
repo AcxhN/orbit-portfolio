@@ -12,6 +12,8 @@ Running record of the unattended build session (2026-10-22).
 - **Step 3 — GitHub.** Public repo https://github.com/AcxhN/orbit-portfolio, `main` pushed.
 - **Step 4a — Layout.** Header/nav (active link), footer, skip link, dark theme tokens.
 - **Step 4b — Home page.** Intro with placeholder name "A" and section cards.
+- **Step 4c — MDX + Projects.** `@next/mdx`, write-ups in `src/content/projects/`
+  with `export const metadata`, `/projects` index, `/projects/[slug]`, custom 404.
 
 ## Failed / blocked
 
@@ -25,6 +27,8 @@ Running record of the unattended build session (2026-10-22).
 - `npm install` reported "5 high severity vulnerabilities" in dev dependencies straight
   from the template. I did **not** run `npm audit fix --force`, because it can install
   breaking major versions. Worth looking at with `npm audit` later.
+- Unknown `/projects/<slug>` URLs show the 404 page but return HTTP 200 (streaming +
+  Cache Components; documented Next behavior, page has `noindex`). See `05-mdx-and-projects.md`.
 - npm warned that `unrs-resolver` has an install script not yet approved
   (`npm install-scripts approve unrs-resolver`). Build and lint work without it.
 
