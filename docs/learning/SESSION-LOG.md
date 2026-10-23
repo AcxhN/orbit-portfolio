@@ -14,6 +14,9 @@ Running record of the unattended build session (2026-10-22).
 - **Step 4b — Home page.** Intro with placeholder name "A" and section cards.
 - **Step 4c — MDX + Projects.** `@next/mdx`, write-ups in `src/content/projects/`
   with `export const metadata`, `/projects` index, `/projects/[slug]`, custom 404.
+- **Convention change (your request).** From here on, commits follow the Angular
+  convention `type(scope): summary`, recorded in CLAUDE.md. The 7 earlier commits keep
+  their old messages (no history rewrites).
 
 ## Failed / blocked
 

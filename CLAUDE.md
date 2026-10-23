@@ -45,6 +45,10 @@ Blender `.glb` models.
 - TypeScript strict mode.
 - Small, focused components.
 - Commit often with clear messages.
+- Commit messages follow the Angular convention: `type(scope): summary`, where type is
+  feat, fix, docs, style, refactor, test, or chore (e.g. `feat(projects): add write-up`).
+  Commits before `docs(claude): adopt Angular commit convention` predate this rule and
+  are left as-is (no history rewrites).
 - Run `npm run build` and `npm run lint` before committing.
 - Keep this CLAUDE.md updated as the project evolves.
 - Learning notes live in `docs/learning/` (numbered, one per step) plus
