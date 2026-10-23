@@ -11,6 +11,7 @@ Running record of the unattended build session (2026-10-22).
   AGENTS.md). Art source formats added to `.gitignore`.
 - **Step 3 — GitHub.** Public repo https://github.com/AcxhN/orbit-portfolio, `main` pushed.
 - **Step 4a — Layout.** Header/nav (active link), footer, skip link, dark theme tokens.
+- **Step 4b — Home page.** Intro with placeholder name "A" and section cards.
 
 ## Failed / blocked
 
