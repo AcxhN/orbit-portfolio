@@ -27,6 +27,28 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+/*
+  Safety net: switch off animations and transitions everywhere when the
+  visitor prefers reduced motion or has turned on lite mode (the toggle sets
+  data-lite on <html>). Components can also check useReducedEffects().
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+[data-lite="true"] *,
+[data-lite="true"] *::before,
+[data-lite="true"] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
 /* A clearly visible focus ring for keyboard users, on every focusable element. */
 :focus-visible {
   outline: 2px solid var(--color-accent);

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import { LiteModeToggle } from "@/components/lite-mode-toggle";
 import { NavLinks } from "@/components/nav-links";
 import { navItems } from "@/lib/nav";
 
@@ -13,16 +14,19 @@ export function SiteHeader() {
           </span>
           orbit
         </Link>
-        <nav aria-label="Main">
-          {/*
-            NavLinks reads the current URL to highlight the active page.
-            Suspense lets Next.js prerender the page with plain links first
-            (the fallback) if the URL isn't known yet at build time.
-          */}
-          <Suspense fallback={<PlainNavLinks />}>
-            <NavLinks />
-          </Suspense>
-        </nav>
+        <div className="flex items-center gap-5">
+          <nav aria-label="Main">
+            {/*
+              NavLinks reads the current URL to highlight the active page.
+              Suspense lets Next.js prerender the page with plain links first
+              (the fallback) if the URL isn't known yet at build time.
+            */}
+            <Suspense fallback={<PlainNavLinks />}>
+              <NavLinks />
+            </Suspense>
+          </nav>
+          <LiteModeToggle />
+        </div>
       </div>
     </header>
   );

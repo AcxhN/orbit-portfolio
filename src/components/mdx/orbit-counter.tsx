@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useReducedEffects } from "@/hooks/use-reduced-effects";
 
 const ORBIT_RADIUS = 36;
 const MAX_MOONS = 8;
@@ -8,6 +9,7 @@ const MAX_MOONS = 8;
 // A tiny interactive demo for MDX write-ups: a planet you can add moons to.
 export function OrbitCounter() {
   const [moons, setMoons] = useState(1);
+  const reducedEffects = useReducedEffects();
 
   return (
     <div className="not-prose my-8 flex flex-col items-center gap-6 rounded-lg border border-border bg-surface p-6 sm:flex-row">
@@ -20,7 +22,7 @@ export function OrbitCounter() {
         <circle r={ORBIT_RADIUS} fill="none" stroke="var(--color-border)" strokeDasharray="2 3" />
         <circle r="12" fill="var(--color-accent)" />
         <g
-          className="motion-safe:animate-[spin_12s_linear_infinite]"
+          className={reducedEffects ? undefined : "animate-[spin_12s_linear_infinite]"}
           style={{ transformBox: "fill-box", transformOrigin: "center" }}
         >
           {/* Invisible ring so the group's box is centered on the planet. */}

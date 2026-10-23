@@ -21,6 +21,8 @@ Running record of the unattended build session (2026-10-22).
   `OrbitCounter` component (verified rendering on a production server).
 - **Step 4e — About page.** Bio/skills/timeline from typed `src/data/about.ts`
   (placeholders), ready to be reused by the Phase 3 terminal.
+- **Step 4f — Lite mode + reduced motion.** Header toggle (localStorage in try/catch),
+  `usePrefersReducedMotion`, combined `useReducedEffects`, CSS safety net.
 
 ## Failed / blocked
 
