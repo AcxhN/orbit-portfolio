@@ -10,6 +10,7 @@ Running record of the unattended build session (2026-10-22).
 - **Step 2 — CLAUDE.md.** Project briefing for Claude Code (imports Next's
   AGENTS.md). Art source formats added to `.gitignore`.
 - **Step 3 — GitHub.** Public repo https://github.com/AcxhN/orbit-portfolio, `main` pushed.
+- **Step 4a — Layout.** Header/nav (active link), footer, skip link, dark theme tokens.
 
 ## Failed / blocked
 
