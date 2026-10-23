@@ -19,6 +19,8 @@ Running record of the unattended build session (2026-10-22).
   their old messages (no history rewrites).
 - **Step 4d — First write-up.** "Building Orbit, Part 0: Setup" with the embedded
   `OrbitCounter` component (verified rendering on a production server).
+- **Step 4e — About page.** Bio/skills/timeline from typed `src/data/about.ts`
+  (placeholders), ready to be reused by the Phase 3 terminal.
 
 ## Failed / blocked
 
